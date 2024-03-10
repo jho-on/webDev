@@ -1,0 +1,45 @@
+@font-face {
+    src: url(fonts/ComicSansMS3.ttf);
+    font-family: ComicSans;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: ComicSans;
+    font-size: 16px;
+    display: flow-root;
+}
+
+h1{
+    text-shadow: -5px -3px 5px yellow;
+}
+
+p{
+    text-shadow: 5px 3px 5px purple, -5px -3px 5px yellow;
+}
+
+div{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    box-shadow: 5px 3px 5px purple;
+    margin: auto;
+}
+
+#joelma1{
+    float: left;
+    margin-right: 15px;
+}
+
+#vittoImg{
+    float: right;
+    margin-left: 15px;
+}

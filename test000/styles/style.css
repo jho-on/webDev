@@ -1,0 +1,88 @@
+@font-face {
+    src: url(fonts/ComicSansMS3.ttf);
+    font-family: ComicSans;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: ComicSans;
+    font-size: 16px;
+}
+
+header{
+    text-align: center;
+    color: black;
+    background-color: antiquewhite;
+
+    border: 3px solid blueviolet;
+    border-radius
+    border-radius: 16px;
+
+    width: 100vw;
+
+    margin: auto;
+    position: fixed;
+    left: c;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 6px;
+}
+
+p{
+    color: rgb(255, 0, 43);
+    border-bottom: 2px solid blue;
+    border-top: 2px solid yellow;
+    border-right: 2px solid greenyellow;
+    border-left: 2px solid pink; 
+    border-radius: 5px;
+}
+
+
+
+video{
+    width: 100vw;
+    max-width: 1280px;
+    margin: auto;
+    display: block;
+}
+
+
+#musicName{
+    color: yellow;
+    width:fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+
+#joelmaImg{
+    width:fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+#audioPlayer{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#lyrics{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+#musicLyrics{
+    display: inline;
+}
+
+
+.title{
+    font-style: italic;
+    font-size: 32px;
+}
