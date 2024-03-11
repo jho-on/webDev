@@ -1,6 +1,6 @@
 # Web Development
-    Some projects using html, css and javascript
+    Some projects about web development
 
-    Used to learn and have some fun (maybe)
+    Used to learn and have some fun (maybe-')
 
     :)
