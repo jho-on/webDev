@@ -16,14 +16,12 @@ header{
     background-color: antiquewhite;
 
     border: 3px solid blueviolet;
-    border-radius
     border-radius: 16px;
 
     width: 100vw;
 
     margin: auto;
-    position: fixed;
-    left: c;
+    
 }
 
 h1, h2, h3, h4, h5, h6{
