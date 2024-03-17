@@ -3,6 +3,8 @@
     --BGDarkColor: #0c0812;
     --BGDarkerColor: #060208;
     --felpsPink: #ff0044;
+    --felpsDarkerPink: #b80037;
+    --usedLink: #b00075;
     --textColor: white;
 }
 @font-face {
@@ -11,7 +13,7 @@
 }
 body{
     background-color: var(--BGColor);
-    font-family: "ComicSans";
+    font-family: "ComicSans", cursive, monospace;
     color: var(--textColor);
     margin: 0px;
 }
@@ -24,28 +26,42 @@ main{
     margin-right: 15px;
     margin-top: 5px;
 }
-section{
-    width: 75%;
-    border-right: 1px solid var(--textColor);
-}
 h1{
     margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 15px;
 }
 p{
-    margin: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 20px;
     text-align: justify;
 }
 footer{
     background-color: var(--BGDarkColor);
+    width: 100vw;
+    height: fit-content;
     padding: 20px;
 }
 footer p{
     text-align: center;
     margin: 0px;
 }
-
+p a{
+    color: var(--felpsPink);
+    text-decoration: underline;
+}
+p a:hover{
+    cursor: pointer;
+    color: var(--felpsDarkerPink)
+}
+p a:visited{
+    color: var(--usedLink)
+}
 .navBar{
     background-color: var(--BGDarkColor);
+    position: sticky;
+    top: 0;
 }
 .navBar ul{
     list-style-type: none;
