@@ -1,0 +1,73 @@
+:root{
+    --BGColor: #181425;
+    --BGDarkColor: #0c0812;
+    --BGDarkerColor: #060208;
+    --felpsPink: #ff0044;
+    --textColor: white;
+}
+@font-face {
+    font-family: "ComicSans";
+    src: url("fonts/ComicSansMS3.ttf");
+}
+body{
+    background-color: var(--BGColor);
+    font-family: "ComicSans";
+    color: var(--textColor);
+    margin: 0px;
+}
+header{
+    margin: auto;
+    width: fit-content;
+}
+main{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+section{
+    width: 75%;
+    border-right: 1px solid var(--textColor);
+}
+h1{
+    margin: 0px;
+}
+p{
+    margin: 10px;
+    text-align: justify;
+}
+footer{
+    background-color: var(--BGDarkColor);
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    margin: 0px;
+}
+
+.navBar{
+    background-color: var(--BGDarkColor);
+}
+.navBar ul{
+    list-style-type: none;
+    background-color: var(--BGDarkColor);
+    padding: 0px;
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+}
+.navBar li{
+    float: left;
+}
+.navBar a{
+    text-decoration: none;
+    color: var(--textColor);
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navBar #active{
+    border: 1px solid var(--felpsPink);
+}
+.navBar a:hover{
+    background-color: var(--BGDarkerColor);
+}
