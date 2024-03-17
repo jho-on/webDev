@@ -16,6 +16,7 @@ body{
     font-family: "ComicSans", cursive, monospace;
     color: var(--textColor);
     margin: 0px;
+    min-width: min-content;
 }
 header{
     margin: auto;
@@ -39,7 +40,7 @@ p{
 }
 footer{
     background-color: var(--BGDarkColor);
-    width: 100vw;
+    width: auto;
     height: fit-content;
     padding: 20px;
 }
@@ -62,6 +63,7 @@ p a:visited{
     background-color: var(--BGDarkColor);
     position: sticky;
     top: 0;
+    min-width: max-content;
 }
 .navBar ul{
     list-style-type: none;
