@@ -2,10 +2,12 @@
     --BGColor: #181425;
     --BGDarkColor: #0c0812;
     --BGDarkerColor: #060208;
+    
     --felpsPink: #ff0044;
     --felpsDarkerPink: #b80037;
     --usedLink: #b00075;
-    --textColor: white;
+
+    --textColor: #ffffff;
 }
 @font-face {
     font-family: "ComicSans";
@@ -16,9 +18,8 @@ body{
     font-family: "ComicSans", cursive, monospace;
     color: var(--textColor);
     margin: 0px;
-    min-width: min-content;
+    min-width: max-content;
     box-sizing: border-box;
-    
 }
 header{
     margin: auto;
@@ -37,7 +38,8 @@ p{
     margin: auto;
     text-align: justify;
     text-align-last: center;
-    max-width: 768px;
+    max-width: 33.3vw;
+    min-width: 250px;
 }
 footer{
     background-color: var(--BGDarkColor);
@@ -61,15 +63,18 @@ p a:hover{
 p a:visited{
     color: var(--usedLink)
 }
-#modeSelector{
-    position: absolute;
-    right: 0;
+#modeSelectorBtn{
+    width: 39;
+    height: 45;
+    background-color: hsla(0, 0%, 100%, 0);
+    border: none;
 }
 .navBar{
     background-color: var(--BGDarkColor);
     position: sticky;
     top: 0;
     min-width: max-content;
+    
 }
 .navBar ul{
     list-style-type: none;
@@ -81,18 +86,31 @@ p a:visited{
 }
 .navBar li{
     float: left;
+    
 }
 .navBar a{
     text-decoration: none;
     color: var(--textColor);
-    padding: 15px;
-    display: block;
+    display: inline-block;
+    height: 44px;
+    padding-top: 18px;
+    min-width: 125px;
     text-align: center;
 }
 .navBar #active{
     border: 1px solid var(--felpsPink);
 }
 .navBar a:hover{
+    background-color: var(--BGDarkerColor);
+}
+#modeSelector{
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid var(--textColor);
+    height: 56px;
+}
+#modeSelector:hover{
     background-color: var(--BGDarkerColor);
 }
 .contactForm{
