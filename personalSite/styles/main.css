@@ -114,6 +114,13 @@ p a:visited{
     padding: 3px;
     border-radius: 0px;
 }
+.contactForm input[type=button]{
+    width: 100px;
+    height: 30px;
+}
+.contactForm input:hover, textarea:hover{
+    background-color: var(--BGDarkerColor);
+}
 ::placeholder{
     color: var(--textColor);
     opacity: .5;
