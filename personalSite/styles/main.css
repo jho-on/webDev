@@ -42,10 +42,11 @@ footer{
     width: auto;
     height: fit-content;
     padding: 20px;
+    border-top: 1px solid var(--textColor);
+    margin-top: 15px;
 }
 footer p{
     text-align: center;
-    margin: 0px;
 }
 p a{
     color: var(--felpsPink);
@@ -57,6 +58,10 @@ p a:hover{
 }
 p a:visited{
     color: var(--usedLink)
+}
+#modeSelector{
+    position: absolute;
+    right: 0;
 }
 .navBar{
     background-color: var(--BGDarkColor);
