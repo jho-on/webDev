@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "ComicSans";
+    src: url("ComicSansMS3.ttf");
+}
+:root{
+    --BGColor: #181425;
+    --BGDarkColor: #0c0812;
+    --BGDarkerColor: #060208;
+    
+    --felpsPink: #ff0044;
+    --felpsDarkPink: #b80037;
+    --usedLink: #b00075;
+
+    --textColor: #ffffff;
+}
+::placeholder{
+    color: var(--felpsPink);
+    opacity: .7;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--BGColor);
+    color: var(--textColor);
+    font-family: "ComicSans";
+    font-size: 20px;
+
+    width: 100vw;
+   
+    margin: 0px;
+    word-wrap: break-word;
+    
+    
+}
+h1{
+    color: var(--felpsPink);
+    white-space: pre-line;
+}
+p{
+    margin: 0px;
+    padding-bottom: 5px;
+}
+input[type=number]{
+    background-color: var(--BGDarkerColor);
+    color: var(--textColor);
+
+    width: 10ch;
+    height: 5ch;
+    text-align: center;
+    border: 1px solid var(--felpsDarkPink);
+    
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+}
+
+#mainBox{
+    background-color: var(--BGDarkColor);
+    box-shadow: 10px 10px var(--felpsDarkPink);
+
+    text-align: center;
+    width: 60vw;
+    min-width: calc(max-content + 20px);
+    height: fit-content;
+
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+#rangeBox{
+    padding: 10px;
+}
+input[type=number]:hover{
+    background-color: #000000;
+}
+input[type=button]{
+    background-color:   var(--felpsPink);
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
+    transition: background-color 0.25s;
+}
+input[type=button]:hover{
+    background-color: var(--felpsDarkPink);
+}

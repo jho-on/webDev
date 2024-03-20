@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="mainBox">
+        <div id="score">
+            <label id="score">Score: 0 | Best: </label>
+        </div>
+        <h1 id="displayH1">(: Guess The Number :)</h1>
+        <p>Numbers will be generated from: </p>
+        <div id="rangeBox">
+            <input type="number" id="min" min="0" placeholder="min" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189">
+            <label>-</label>
+            <input type="number" id="max" min="1" placeholder="max" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189">
+        
+        </div>
+        <input type="number" id="guess" min="0" placeholder="guess" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189">
+        <br>
+        <input type="button" value="submit" id="submitBtn">
+        
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
