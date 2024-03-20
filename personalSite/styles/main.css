@@ -15,14 +15,14 @@
 }
 *{
     box-sizing: border-box;
-    
+
 }
 body{
     background-color: var(--BGColor);
     font-family: "ComicSans", cursive, monospace;
     color: var(--textColor);
     margin: 0px;
-    min-width: fit-content;
+    min-width: min-content;
 }
 header{
     margin: auto;
