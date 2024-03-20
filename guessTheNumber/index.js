@@ -29,7 +29,9 @@ function testGuess(){
         }else{
             msg += "You Win :D";
             score += 1;
-            localStorage.setItem("bestScore", String(score));
+            if (Number(localStorage.getItem("bestScore")) < score){
+                localStorage.setItem("bestScore", String(score));
+            }
         }
         DISPLAY.textContent = msg;
         SCORE.textContent = "Score: " + String(score) + " | Best: " + localStorage.getItem("bestScore");
