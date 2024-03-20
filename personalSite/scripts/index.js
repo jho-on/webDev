@@ -24,7 +24,6 @@ let whiteModeSelectorImg = "images/moon.png";
 
 
 function changeMode(){
-    console.log(darkMode)
     if (darkMode){
         darkMode = false;
         localStorage.setItem("darkMode", "");

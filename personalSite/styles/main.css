@@ -13,13 +13,15 @@
     font-family: "ComicSans";
     src: url("fonts/ComicSansMS3.ttf");
 }
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: var(--BGColor);
     font-family: "ComicSans", cursive, monospace;
     color: var(--textColor);
     margin: 0px;
-    min-width: max-content;
-    box-sizing: border-box;
+    min-width: fit-content;
 }
 header{
     margin: auto;
@@ -38,7 +40,7 @@ p{
     margin: auto;
     text-align: justify;
     text-align-last: center;
-    max-width: 33.3vw;
+    max-width: 50%;
     min-width: 250px;
 }
 footer{
@@ -69,12 +71,22 @@ p a:visited{
     background-color: hsla(0, 0%, 100%, 0);
     border: none;
 }
+#modeSelector{
+    padding-top: 7px;
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+    border: 1px solid var(--textColor);
+    height: 64px;
+}
+#modeSelector:hover{
+    background-color: var(--BGDarkerColor);
+}
 .navBar{
     background-color: var(--BGDarkColor);
     position: sticky;
     top: 0;
     min-width: max-content;
-    
+    text-align: center;
 }
 .navBar ul{
     list-style-type: none;
@@ -86,31 +98,23 @@ p a:visited{
 }
 .navBar li{
     float: left;
-    
 }
 .navBar a{
     text-decoration: none;
     color: var(--textColor);
     display: inline-block;
-    height: 44px;
-    padding-top: 18px;
-    min-width: 125px;
+
     text-align: center;
+    height: 64px;
+    padding: 15px;
+    padding-top: 18px;
+    min-width: fit-content;
+    
 }
 .navBar #active{
     border: 1px solid var(--felpsPink);
 }
 .navBar a:hover{
-    background-color: var(--BGDarkerColor);
-}
-#modeSelector{
-    padding-top: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 1px solid var(--textColor);
-    height: 56px;
-}
-#modeSelector:hover{
     background-color: var(--BGDarkerColor);
 }
 .contactForm{
