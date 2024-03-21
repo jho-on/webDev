@@ -17,16 +17,20 @@
     box-sizing: border-box;
 
 }
+
 body{
     background-color: var(--BGColor);
     font-family: "ComicSans", cursive, monospace;
     color: var(--textColor);
-    margin: 0px;
-    min-width: min-content;
+    margin: auto;
+    width: fit;
 }
 header{
     margin: auto;
     width: fit-content;
+}
+hr{
+    visibility: hidden;
 }
 main{
     margin-left: 15px;
@@ -42,7 +46,7 @@ p{
     text-align: justify;
     text-align-last: center;
     max-width: 50%;
-    min-width: 250px;
+
 }
 footer{
     background-color: var(--BGDarkColor);
@@ -97,8 +101,34 @@ p a:visited{
     width: fit-content;
     margin: auto;
 }
+
 .navBar li{
     float: left;
+}
+
+@media screen and (max-width: 600px){
+    .navBar li{
+        float: none;
+    }
+    .navBar{
+        position: relative;
+    }
+
+    .navBar,h1, header{
+        width: 100vw;
+    }
+    p{
+        width: 100vw;
+        margin: 0px;
+    }
+    #logo{
+        width: 100%;
+    }
+    header{
+        text-align: center;
+        margin: 0px;
+    }
+    
 }
 .navBar a{
     text-decoration: none;
